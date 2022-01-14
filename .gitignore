@@ -1,0 +1,9 @@
+*.swp
+*.o
+*.jpg
+*.png
+input/
+output/
+heq
+*.log
+
