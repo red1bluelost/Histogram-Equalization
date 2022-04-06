@@ -54,7 +54,7 @@ __global__ void calcHist(unsigned char *input, unsigned int *histogram,
   __syncthreads();
 
   if (y < height && x < width) {
-    atomicAdd(&histogram[input[location]], 1u);
+    atomicAdd(&shared_hist[input[location]], 1u);
   }
 
   __syncthreads();
